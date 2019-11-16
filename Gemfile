@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+ruby '2.6.5'
 
 gem 'slack-ruby-bot'
 gem 'puma'
