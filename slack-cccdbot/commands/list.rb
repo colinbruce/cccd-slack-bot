@@ -1,7 +1,7 @@
 module SlackCccdbot
   module Commands
     class List < SlackRubyBot::Commands::Base
-      command 'calculate' do |client, data, _match|
+      command 'list' do |client, data, _match|
         client.say(channel: data.channel, text: 'list environments')
       end
     end
