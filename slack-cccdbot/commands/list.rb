@@ -1,4 +1,4 @@
-module Slackcccdbot
+module SlackCccdbot
   module Commands
     class List < SlackRubyBot::Commands::Base
       command 'calculate' do |client, data, _match|
