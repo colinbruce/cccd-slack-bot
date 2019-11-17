@@ -18,5 +18,9 @@ module SlackCccdbot
     def ping_page
       "#{url}/ping.json"
     end
+
+    def api_page
+      "#{url}/api/documentation"
+    end
   end
 end
