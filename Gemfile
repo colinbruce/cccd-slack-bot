@@ -6,10 +6,12 @@ gem 'puma'
 gem 'sinatra'
 gem 'dotenv'
 gem 'celluloid-io'
+gem 'http'
 
 group :development, :test do
   gem 'rake'
   gem 'foreman'
+  gem 'pry'
 end
 
 group :test do
