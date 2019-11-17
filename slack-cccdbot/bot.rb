@@ -14,5 +14,9 @@ module SlackCccdbot
   			long_desc 'Queries the given environment(s) and displays the branch name currently deployed'
 			end
   	end
+
+  	SlackRubyBot.configure do |config|
+		  config.aliases = ['cccdbot', 'getpaidbot', 'cb']
+		end
   end
 end
