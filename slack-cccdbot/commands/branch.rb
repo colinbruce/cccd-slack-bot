@@ -20,14 +20,13 @@ module SlackCccdbot
           client.say(channel: data.channel, text: "`production` is running the `#{json['app_branch']}` branch")
         else
           match['expression'].split(/,\s|\s/).each do |env|
-            if SlackCccdbot::Environment::NON_LIVE_ENVS.include?(env)
+            next unless SlackCccdbot::Environment::NON_LIVE_ENVS.include?(env)
 
-              built_uri = Environment.new(env).ping_page
-              response = HTTP.get(built_uri)
-              json = JSON.parse(response.body)
+            built_uri = Environment.new(env).ping_page
+            response = HTTP.get(built_uri)
+            json = JSON.parse(response.body)
 
-              client.say(channel: data.channel, text: "`#{env}` is running the `#{json['app_branch']}` branch")
-            end
+            client.say(channel: data.channel, text: "`#{env}` is running the `#{json['app_branch']}` branch")
           end
         end
       end

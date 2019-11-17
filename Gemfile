@@ -1,22 +1,22 @@
 source 'https://rubygems.org'
 ruby '2.6.5'
 
-gem 'slack-ruby-bot'
+gem 'celluloid-io'
+gem 'dotenv'
+gem 'http'
 gem 'puma'
 gem 'sinatra'
-gem 'dotenv'
-gem 'celluloid-io'
-gem 'http'
+gem 'slack-ruby-bot'
 
 group :development, :test do
-  gem 'rake'
   gem 'foreman'
   gem 'pry'
+  gem 'rake'
 end
 
 group :test do
-  gem 'rspec'
   gem 'rack-test'
+  gem 'rspec'
   gem 'vcr'
   gem 'webmock'
 end
