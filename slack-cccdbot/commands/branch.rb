@@ -3,16 +3,11 @@ require 'pry'
 
 module SlackCccdbot
   module Commands
-
-    URI_SUFFIX = '.claim-crown-court-defence.service.justice.gov.uk'
-    NON_LIVE_ENVS = [ 'dev', 'staging', 'api-sandbox' ]
-    LIVE_ENV = 'cccd-production.apps.live-1.cloud-platform.service.justice.gov.uk'
-
     class Branch < SlackRubyBot::Commands::Base
       command 'branch' do |client, data, match|
         if match['expression'].eql?('all')
           NON_LIVE_ENVS.each do |env|
-            built_uri = "https://#{env}#{URI_SUFFIX}/ping.json"
+            built_uri = Environment.new(env).ping_page
             response = HTTP.get(built_uri)
             json = JSON.parse(response.body)
 
