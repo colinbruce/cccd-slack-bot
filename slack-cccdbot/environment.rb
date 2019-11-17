@@ -1,9 +1,8 @@
 module SlackCccdbot
-  URI_SUFFIX = '.claim-crown-court-defence.service.justice.gov.uk'
-  NON_LIVE_ENVS = [ 'dev', 'staging', 'api-sandbox' ]
-  LIVE_ENV = 'cccd-production.apps.live-1.cloud-platform.service.justice.gov.uk'
-
   class Environment
+    URI_SUFFIX = '.claim-crown-court-defence.service.justice.gov.uk'
+    NON_LIVE_ENVS = ['dev', 'staging', 'api-sandbox']
+    LIVE_ENV = 'cccd-production.apps.live-1.cloud-platform.service.justice.gov.uk'
 
     def initialize(name)
       @name = name
