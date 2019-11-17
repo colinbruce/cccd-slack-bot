@@ -22,7 +22,7 @@ module SlackCccdbot
           match['expression'].split(/,\s|\s/).each do |env|
             if SlackCccdbot::Environment::NON_LIVE_ENVS.include?(env)
 
-              built_uri = "https://#{env}#{URI_SUFFIX}/ping.json"
+              built_uri = Environment.new(env).ping_page
               response = HTTP.get(built_uri)
               json = JSON.parse(response.body)
 
