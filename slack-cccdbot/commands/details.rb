@@ -6,7 +6,7 @@ module SlackCccdbot
 
     URI_SUFFIX = '.claim-crown-court-defence.service.justice.gov.uk'
     NON_LIVE_ENVS = [ 'dev', 'staging', 'api-sandbox' ]
-    LIVE_ENV = ['cccd-production.apps.live-1.cloud-platform.service.justice.gov.uk']
+    LIVE_ENV = 'cccd-production.apps.live-1.cloud-platform.service.justice.gov.uk'
 
     class Details < SlackRubyBot::Commands::Base
       command 'details' do |client, data, match|
