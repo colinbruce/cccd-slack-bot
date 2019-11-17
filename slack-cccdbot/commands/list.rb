@@ -18,7 +18,7 @@ module SlackCccdbot
             response = HTTP.get(built_uri)
             json = JSON.parse(response.body)
 
-            client.say(channel: data.channel, text: "`#{env}` details:```#{json}```")
+            client.say(channel: data.channel, text: "`#{env}` is running the `#{json['app_branch']}` branch")
           end
         end
       end
