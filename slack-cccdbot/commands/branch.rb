@@ -8,8 +8,8 @@ module SlackCccdbot
     NON_LIVE_ENVS = [ 'dev', 'staging', 'api-sandbox' ]
     LIVE_ENV = ['cccd-production.apps.live-1.cloud-platform.service.justice.gov.uk']
 
-    class List < SlackRubyBot::Commands::Base
-      command 'list' do |client, data, match|
+    class Branch < SlackRubyBot::Commands::Base
+      command 'branch' do |client, data, match|
 
         match['expression'].split(/,\s|\s/).each do |env|
           if NON_LIVE_ENVS.include?(env)
