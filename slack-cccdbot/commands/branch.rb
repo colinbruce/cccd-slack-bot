@@ -1,5 +1,4 @@
 require 'http'
-require 'pry'
 
 module SlackCccdbot
   module Commands
