@@ -13,7 +13,12 @@ module SlackCccdbot
 
         match['expression'].split(/,\s|\s/).each do |env|
           if NON_LIVE_ENVS.include?(env)
-            client.say(channel: data.channel, text: "Show data for `#{env}`")
+
+            built_uri = "https://#{env}#{URI_SUFFIX}/ping.json"
+            response = HTTP.get(built_uri)
+            json = JSON.parse(response.body)
+
+            client.say(channel: data.channel, text: "`#{env}` details:```#{json}```")
           end
         end
       end
