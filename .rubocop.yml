@@ -1,0 +1,6 @@
+AllCops:
+  DisplayCopNames: true
+  TargetRubyVersion: 2.6
+
+Metrics/LineLength:
+  Max: 120
