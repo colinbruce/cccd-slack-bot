@@ -7,7 +7,7 @@ module SlackCccdbot
         env = match['expression']
         if SlackCccdbot::Environment::NON_LIVE_ENVS.include?(env)
           built_uri = Environment.new(env).api_page
-          good_result = "Here's a #{env} API link: #{built_uri}"
+          good_result = "Here's an API link for `#{env}`: #{built_uri}"
           bad_result = "Sorry, can't connect to `#{env}` right now! :thinking_face:"
           response = HTTP.timeout(3).get(built_uri).status
           result = response.eql?(200) ? good_result : bad_result
