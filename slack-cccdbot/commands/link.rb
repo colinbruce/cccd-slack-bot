@@ -9,7 +9,7 @@ module SlackCccdbot
           built_uri = Environment.new(env).url
           good_result = "Here's a link for `#{env}`: #{built_uri}"
           bad_result = "Sorry, can't connect to `#{env}` right now! :thinking_face:"
-          response = HTTP.timeout(3).get(built_uri).status
+          response = HTTP.get(built_uri).status
           result = response.eql?(200) ? good_result : bad_result
           client.say(channel: data.channel, text: result)
         end
