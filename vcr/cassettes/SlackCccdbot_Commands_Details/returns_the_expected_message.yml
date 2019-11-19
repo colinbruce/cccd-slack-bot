@@ -1,0 +1,61 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://dev.claim-crown-court-defence.service.justice.gov.uk/ping.json
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - dev.claim-crown-court-defence.service.justice.gov.uk
+      User-Agent:
+      - http.rb/3.3.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - openresty/1.15.8.2
+      Date:
+      - Tue, 19 Nov 2019 15:48:28 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Vary:
+      - Accept-Encoding
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - max-age=15724800; includeSubDomains
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Etag:
+      - W/"afcb64ec14bb9cac6a406938b3eb5a11"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - ca6c76306650b7202d55957c8aaafd53
+      X-Runtime:
+      - '0.001865'
+    body:
+      encoding: UTF-8
+      string: '{"version_number":"NOT USED ANYMORE","build_date":"2019-11-18T17:02:17+0000","commit_id":"38851ee3eea3bb39e98afeccda8aaf3e0bd7bbce","build_tag":"admin-38851ee3eea3bb39e98afeccda8aaf3e0bd7bbce","app_branch":"master"}'
+    http_version: 
+  recorded_at: Tue, 19 Nov 2019 15:48:28 GMT
+recorded_with: VCR 5.0.0
