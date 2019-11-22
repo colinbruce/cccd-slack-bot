@@ -1,0 +1,41 @@
+name: Rails Tests
+
+on:
+  pull_request:
+    branches:
+      - 'master'
+  push:
+    branches:
+      - 'master'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+
+    - name: Set up RVM
+      run: |
+        curl -sSL https://get.rvm.io | bash
+
+    - name: Set up Ruby from .ruby-version
+      run: |
+        source $HOME/.rvm/scripts/rvm
+        rvm install $(cat .ruby-version) --binary
+        rvm --default use $(cat .ruby-version)
+
+    - name: Build App
+      env:
+        RAILS_ENV: test
+      run: |
+        source $HOME/.rvm/scripts/rvm
+        gem install bundler
+        bundle install --jobs 4 --retry 3
+
+    - name: Run Tests
+      env:
+        RAILS_ENV: test
+      run:
+        source $HOME/.rvm/scripts/rvm
+        bundle exec rspec
