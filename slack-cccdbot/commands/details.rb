@@ -5,7 +5,7 @@ module SlackCccdbot
     class Details < SlackRubyBot::Commands::Base
       command 'details' do |client, data, match|
         match['expression'].split(/,\s|\s/).each do |env|
-          next unless SlackCccdbot::Environment::NON_LIVE_ENVS.include?(env)
+          next unless SlackCccdbot::Environment.valid?(env)
 
           built_uri = Environment.new(env).ping_page
           response = HTTP.get(built_uri)
