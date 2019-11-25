@@ -1,0 +1,305 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://dev.claim-crown-court-defence.service.justice.gov.uk/ping.json
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - dev.claim-crown-court-defence.service.justice.gov.uk
+      User-Agent:
+      - http.rb/4.2.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - openresty/1.15.8.2
+      Date:
+      - Mon, 25 Nov 2019 13:08:39 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Vary:
+      - Accept-Encoding
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - max-age=15724800; includeSubDomains
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Etag:
+      - W/"8fadc30cb8bbcb498f747170807f37ff"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 854b02c885631123c5ea464ccdfccffe
+      X-Runtime:
+      - '0.001830'
+    body:
+      encoding: UTF-8
+      string: '{"version_number":"NOT USED ANYMORE","build_date":"2019-11-24T21:19:51+0000","commit_id":"52a51b799619b6a671387c81619d1fcfa347ac6b","build_tag":"app-52a51b799619b6a671387c81619d1fcfa347ac6b","app_branch":"VCR-test-branch"}'
+    http_version: 
+  recorded_at: Mon, 25 Nov 2019 13:08:39 GMT
+- request:
+    method: get
+    uri: https://api.github.com/repos/<GITHUB_ORG>/<GITHUB_REPO>/branches/VCR-test-branch
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.github.com
+      User-Agent:
+      - http.rb/4.2.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 25 Nov 2019 13:08:39 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '4148'
+      Connection:
+      - close
+      Server:
+      - GitHub.com
+      Status:
+      - 200 OK
+      X-Ratelimit-Limit:
+      - '60'
+      X-Ratelimit-Remaining:
+      - '55'
+      X-Ratelimit-Reset:
+      - '1574690919'
+      Cache-Control:
+      - public, max-age=60, s-maxage=60
+      Vary:
+      - Accept
+      - Accept-Encoding
+      Etag:
+      - '"c27b61932207481892be9a281d5a01e5"'
+      X-Github-Media-Type:
+      - github.v3; format=json
+      Access-Control-Expose-Headers:
+      - ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining,
+        X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval,
+        X-GitHub-Media-Type
+      Access-Control-Allow-Origin:
+      - "*"
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; preload
+      X-Frame-Options:
+      - deny
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - origin-when-cross-origin, strict-origin-when-cross-origin
+      Content-Security-Policy:
+      - default-src 'none'
+      X-Github-Request-Id:
+      - DAF7:3266C:CC9472A:F38BE59:5DDBD257
+    body:
+      encoding: UTF-8
+      string: '{"name":"VCR-test-branch","commit":{"sha":"52a51b799619b6a671387c81619d1fcfa347ac6b","node_id":"MDY6Q29tbWl0MzI0NTE1NDk6NTJhNTFiNzk5NjE5YjZhNjcxMzg3YzgxNjE5ZDFmY2ZhMzQ3YWM2Yg==","commit":{"author":{"name":"ColinBruce","email":"colin.bruce@digital.justice.gov.uk","date":"2019-10-31T15:11:10Z"},"committer":{"name":"colinbruce","email":"colin.bruce@digital.justice.gov.uk","date":"2019-11-24T21:07:34Z"},"message":"Test message","tree":{"sha":"79d89154e605ce531fa7eff851b5d5405b5f1fc0","url":"https://api.github.com/repos/<GITHUB_ORG>/<GITHUB_REPO>/git/trees/79d89154e605ce531fa7eff851b5d5405b5f1fc0"},"url":"https://api.github.com/repos/<GITHUB_ORG>/<GITHUB_REPO>/git/commits/52a51b799619b6a671387c81619d1fcfa347ac6b","comment_count":0,"verification":{"verified":false,"reason":"unsigned","signature":null,"payload":null}},"url":"https://api.github.com/repos/<GITHUB_ORG>/<GITHUB_REPO>/commits/52a51b799619b6a671387c81619d1fcfa347ac6b","html_url":"https://github.com/<GITHUB_ORG>/<GITHUB_REPO>/commit/52a51b799619b6a671387c81619d1fcfa347ac6b","comments_url":"https://api.github.com/repos/<GITHUB_ORG>/<GITHUB_REPO>/commits/52a51b799619b6a671387c81619d1fcfa347ac6b/comments","author":{"login":"colinbruce","id":6757677,"node_id":"MDQ6VXNlcjY3NTc2Nzc=","avatar_url":"https://avatars1.githubusercontent.com/u/6757677?v=4","gravatar_id":"","url":"https://api.github.com/users/colinbruce","html_url":"https://github.com/colinbruce","followers_url":"https://api.github.com/users/colinbruce/followers","following_url":"https://api.github.com/users/colinbruce/following{/other_user}","gists_url":"https://api.github.com/users/colinbruce/gists{/gist_id}","starred_url":"https://api.github.com/users/colinbruce/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/colinbruce/subscriptions","organizations_url":"https://api.github.com/users/colinbruce/orgs","repos_url":"https://api.github.com/users/colinbruce/repos","events_url":"https://api.github.com/users/colinbruce/events{/privacy}","received_events_url":"https://api.github.com/users/colinbruce/received_events","type":"User","site_admin":false},"committer":{"login":"colinbruce","id":6757677,"node_id":"MDQ6VXNlcjY3NTc2Nzc=","avatar_url":"https://avatars1.githubusercontent.com/u/6757677?v=4","gravatar_id":"","url":"https://api.github.com/users/colinbruce","html_url":"https://github.com/colinbruce","followers_url":"https://api.github.com/users/colinbruce/followers","following_url":"https://api.github.com/users/colinbruce/following{/other_user}","gists_url":"https://api.github.com/users/colinbruce/gists{/gist_id}","starred_url":"https://api.github.com/users/colinbruce/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/colinbruce/subscriptions","organizations_url":"https://api.github.com/users/colinbruce/orgs","repos_url":"https://api.github.com/users/colinbruce/repos","events_url":"https://api.github.com/users/colinbruce/events{/privacy}","received_events_url":"https://api.github.com/users/colinbruce/received_events","type":"User","site_admin":false},"parents":[{"sha":"3d5edd99cf1d104bff57ea6e3d703aaf7d0544d5","url":"https://api.github.com/repos/<GITHUB_ORG>/<GITHUB_REPO>/commits/3d5edd99cf1d104bff57ea6e3d703aaf7d0544d5","html_url":"https://github.com/<GITHUB_ORG>/<GITHUB_REPO>/commit/3d5edd99cf1d104bff57ea6e3d703aaf7d0544d5"}]},"_links":{"self":"https://api.github.com/repos/<GITHUB_ORG>/<GITHUB_REPO>/branches/CBO-973-transfer-grad-fee-issue","html":"https://github.com/<GITHUB_ORG>/<GITHUB_REPO>/tree/CBO-973-transfer-grad-fee-issue"},"protected":false,"protection":{"enabled":false,"required_status_checks":{"enforcement_level":"off","contexts":[]}},"protection_url":"https://api.github.com/repos/<GITHUB_ORG>/<GITHUB_REPO>/branches/VCR-test-branch/protection"}'
+    http_version: 
+  recorded_at: Mon, 25 Nov 2019 13:08:39 GMT
+- request:
+    method: get
+    uri: https://staging.claim-crown-court-defence.service.justice.gov.uk/ping.json
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - staging.claim-crown-court-defence.service.justice.gov.uk
+      User-Agent:
+      - http.rb/4.2.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - openresty/1.15.8.2
+      Date:
+      - Mon, 25 Nov 2019 13:08:39 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Vary:
+      - Accept-Encoding
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - max-age=15724800; includeSubDomains
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Etag:
+      - W/"4718d52d6cba5cc8f1d39704b62b105b"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 550b951740380363be93713c9aee04b5
+      X-Runtime:
+      - '0.002025'
+    body:
+      encoding: UTF-8
+      string: '{"version_number":"NOT USED ANYMORE","build_date":"2019-11-22T14:20:54+0000","commit_id":"b242676ad3c90373bbced27a00b00b4b6354950e","build_tag":"app-b242676ad3c90373bbced27a00b00b4b6354950e","app_branch":"master"}'
+    http_version: 
+  recorded_at: Mon, 25 Nov 2019 13:08:39 GMT
+- request:
+    method: get
+    uri: https://api-sandbox.claim-crown-court-defence.service.justice.gov.uk/ping.json
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api-sandbox.claim-crown-court-defence.service.justice.gov.uk
+      User-Agent:
+      - http.rb/4.2.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - openresty/1.15.8.2
+      Date:
+      - Mon, 25 Nov 2019 13:08:39 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Vary:
+      - Accept-Encoding
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - max-age=15724800; includeSubDomains
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Etag:
+      - W/"4718d52d6cba5cc8f1d39704b62b105b"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 603252f78fad0aff94e808a8e66e5e89
+      X-Runtime:
+      - '0.001888'
+    body:
+      encoding: UTF-8
+      string: '{"version_number":"NOT USED ANYMORE","build_date":"2019-11-22T14:20:54+0000","commit_id":"b242676ad3c90373bbced27a00b00b4b6354950e","build_tag":"app-b242676ad3c90373bbced27a00b00b4b6354950e","app_branch":"master"}'
+    http_version: 
+  recorded_at: Mon, 25 Nov 2019 13:08:39 GMT
+- request:
+    method: get
+    uri: https://claim-crown-court-defence.service.gov.uk/ping.json
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - claim-crown-court-defence.service.gov.uk
+      User-Agent:
+      - http.rb/4.2.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - openresty/1.15.8.2
+      Date:
+      - Mon, 25 Nov 2019 13:08:39 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Vary:
+      - Accept-Encoding
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - max-age=15724800; includeSubDomains
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Etag:
+      - W/"4718d52d6cba5cc8f1d39704b62b105b"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 1211718cf379c130a46f28ad2341871f
+      X-Runtime:
+      - '0.002161'
+    body:
+      encoding: UTF-8
+      string: '{"version_number":"NOT USED ANYMORE","build_date":"2019-11-22T14:20:54+0000","commit_id":"b242676ad3c90373bbced27a00b00b4b6354950e","build_tag":"app-b242676ad3c90373bbced27a00b00b4b6354950e","app_branch":"master"}'
+    http_version: 
+  recorded_at: Mon, 25 Nov 2019 13:08:39 GMT
+recorded_with: VCR 5.0.0
