@@ -28,7 +28,6 @@ describe SlackCccdbot::Commands::Branch, :vcr do
     end
   end
 
-
   context 'when user requests all branches' do
     let(:env) { 'all' }
     let(:response) do
