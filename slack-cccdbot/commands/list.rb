@@ -7,9 +7,7 @@ module SlackCccdbot
           `dev`
           `api-sandbox`
           `staging`
-          `production`
-
-          Valid variants for `production` are `live` or `prod`
+          `production`, will also accept `live` or `prod`
         TEXT
         client.say(channel: data.channel, text: response)
       end
