@@ -13,9 +13,9 @@ module SlackCccdbot
 
     def url
       @url ||= if NON_LIVE_ENVS.include?(@name)
-                 "https://#{@name}#{URI_SUFFIX}" 
+                 "https://#{@name}#{URI_SUFFIX}"
                elsif LIVE_ENV_SYNONYMS.include?(@name)
-                 "https://#{LIVE_URI}" 
+                 "https://#{LIVE_URI}"
                end
     end
 
