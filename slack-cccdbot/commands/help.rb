@@ -18,12 +18,11 @@ module SlackRubyBot
 
         def general_text
           bot_desc = Support::Help.instance.bot_desc_and_commands
-          <<TEXT
-#{bot_desc.join("\n")}
+          <<~TEXT
+            #{bot_desc.join("\n")}
 
-For full description of the command use: *help <command>*
-
-TEXT
+            For full description of the command use: *help <command>*
+          TEXT
         end
       end
     end
