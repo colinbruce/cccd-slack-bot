@@ -6,6 +6,10 @@ module SlackCccdbot
     LIVE_URI = 'claim-crown-court-defence.service.gov.uk'.freeze
     LIVE_ENV_SYNONYMS = %w[production prod live].freeze
 
+    def self.valid?(name)
+      NON_LIVE_ENVS.include?(name) || LIVE_ENV_SYNONYMS.include?(name)
+    end
+
     def initialize(name)
       @name = name
       url

@@ -30,7 +30,7 @@ module SlackCccdbot
           end
         else
           match['expression'].split(/,\s|\s/).each do |env|
-            next unless SlackCccdbot::Environment::NON_LIVE_ENVS.include?(env)
+            return unless SlackCccdbot::Environment.valid?(env)
 
             branch = ping_data(env)['app_branch']
             if branch.eql?('master')
