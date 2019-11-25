@@ -8,3 +8,6 @@ require 'slack-cccdbot/commands/details'
 require 'slack-cccdbot/commands/link'
 require 'slack-cccdbot/commands/api'
 require 'vcr_helper'
+require 'dotenv'
+
+Dotenv.load('.env.test')
