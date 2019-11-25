@@ -6,7 +6,9 @@ module SlackCccdbot
       GITHUB_URI = 'https://api.github.com/repos/'.freeze
 
       def self.ping_data(env)
-        built_uri = Environment.new(env).ping_page
+        environment = Environment.new(env)
+        @name = environment.name
+        built_uri = environment.ping_page
         response = HTTP.get(built_uri)
         JSON.parse(response.body)
       end
@@ -34,7 +36,7 @@ module SlackCccdbot
             author = get_branch_author(branch)
             branch_text = "#{author}'s `#{branch}` branch"
           end
-          client.say(channel: data.channel, text: "`#{env}` is running #{branch_text}")
+          client.say(channel: data.channel, text: "`#{@name}` is running #{branch_text}")
         end
       end
     end

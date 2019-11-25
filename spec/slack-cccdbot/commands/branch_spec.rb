@@ -19,7 +19,7 @@ describe SlackCccdbot::Commands::Branch, :vcr do
       [
         "`dev` is running colinbruce's `VCR-test-branch` branch",
         '`staging` is running the `master` branch',
-        '`live` is running the `master` branch'
+        '`production` is running the `master` branch'
       ]
     end
 
