@@ -4,8 +4,18 @@ describe SlackCccdbot::Commands::List do
   subject { SlackCccdbot::Bot.instance }
 
   let(:message) { "#{SlackRubyBot.config.user} list" }
+  let(:response) {
+  <<~TEXT
+    You can use the following values to query commands:
+    `dev`
+    `api-sandbox`
+    `staging`
+    `production`
 
+    Valid variants for `production` are `live` or `prod`
+  TEXT
+  }
   it 'returns the expected message' do
-    expect(message: message, channel: 'channel').to respond_with_slack_message("Envs: `dev`\n`api-sandbox`\n`staging`\n`production`")
+    expect(message: message, channel: 'channel').to respond_with_slack_message(response)
   end
 end
