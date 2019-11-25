@@ -12,7 +12,6 @@ module SlackCccdbot
 
     def initialize(name)
       @name = name
-      url
     end
 
     def url
@@ -29,6 +28,16 @@ module SlackCccdbot
 
     def api_page
       "#{url}/api/documentation"
+    end
+
+    def name
+      if LIVE_ENV_SYNONYMS.include?(@name)
+        'production'
+      elsif NON_LIVE_ENVS.include?(@name)
+        @name
+      else
+        'unknown'
+      end
     end
   end
 end

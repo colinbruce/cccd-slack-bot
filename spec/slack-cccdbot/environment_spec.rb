@@ -23,6 +23,12 @@ describe SlackCccdbot::Environment do
 
       it { is_expected.to eql("https://dev.claim-crown-court-defence.service.justice.gov.uk/api/documentation") }
     end
+
+    describe '.name' do
+      subject(:name) { environment.name }
+
+      it { is_expected.to eql("dev") }
+    end
   end
 
   context 'when passed a live synonym' do
@@ -47,11 +53,12 @@ describe SlackCccdbot::Environment do
     end
   end
 
-  context 'live synonyms all return the same end point' do
+  context 'live synonyms all return the same end point and name' do
     let(:expected_url) { "https://claim-crown-court-defence.service.gov.uk" }
 
     %w[production prod live].each do |env_name|  
       it { expect(described_class.new(env_name).url).to eql(expected_url) }
+      it { expect(described_class.new(env_name).name).to eql('production') }
     end
   end
 end
