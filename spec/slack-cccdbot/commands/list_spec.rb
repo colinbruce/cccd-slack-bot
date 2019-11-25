@@ -10,9 +10,7 @@ describe SlackCccdbot::Commands::List do
     `dev`
     `api-sandbox`
     `staging`
-    `production`
-
-    Valid variants for `production` are `live` or `prod`
+    `production`, will also accept `live` or `prod`
   TEXT
   }
   it 'returns the expected message' do
