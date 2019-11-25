@@ -6,7 +6,7 @@ A bot designed to allows slack users to run standard requests against CCCD envir
 The bot can be invited to a channel `/invite @cccd` or interacted with via direct messages.
 
 ## Interacting
-Can be addressed as `@cccd`, `cccd` or it's aliases, currently, `getpaidbot` or `cb` (for brevity)
+Can be addressed as `@cccdbot` or it's aliases, currently `cccd`, `getpaidbot` or `cb` (for brevity)
 
 Pass it a command and environment name(s)
 
