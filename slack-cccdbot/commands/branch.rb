@@ -1,8 +1,12 @@
 require 'http'
 require 'pry'
+
 module SlackCccdbot
   module Commands
     class Branch < SlackRubyBot::Commands::Base
+
+      GITHUB_API_URI = 'https://api.github.com/repos/'.freeze
+
       command 'branch' do |client, data, match|
         if match['expression'].eql?('all')
           SlackCccdbot::Environment::NON_LIVE_ENVS.each do |env|
@@ -17,7 +21,7 @@ module SlackCccdbot
           json = JSON.parse(response.body)
 
           branch = json['app_branch']
-          author = HTTP.get("https://api.github.com/repos/#{ENV['GITHUB_ORG']}/#{ENV['GITHUB_REPO']}/branches/#{branch}")
+          author = HTTP.get("#{GITHUB_API_URI}#{ENV['GITHUB_ORG']}/#{ENV['GITHUB_REPO']}/branches/#{branch}")
 
           client.say(channel: data.channel, text: "`production` is running the `#{branch}` branch")
         else
@@ -31,9 +35,9 @@ module SlackCccdbot
             branch = json['app_branch']
 
             if branch.eql?('master')
-              branch_text = "the `master` branch"
+              branch_text = 'the `master` branch'
             else
-              gh_response = HTTP.get("https://api.github.com/repos/#{ENV['GITHUB_ORG']}/#{ENV['GITHUB_REPO']}/branches/#{branch}")
+              gh_response = HTTP.get("#{GITHUB_API_URI}#{ENV['GITHUB_ORG']}/#{ENV['GITHUB_REPO']}/branches/#{branch}")
               author = JSON.parse(gh_response.body)['commit']['author']['login']
               branch_text = "#{author}'s `#{branch}` branch"
             end
