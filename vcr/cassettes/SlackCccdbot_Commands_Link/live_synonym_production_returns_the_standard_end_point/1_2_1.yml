@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - openresty/1.15.8.2
       Date:
-      - Tue, 26 Nov 2019 14:49:14 GMT
+      - Tue, 26 Nov 2019 15:07:49 GMT
       Content-Type:
       - text/html; charset=utf-8
       Transfer-Encoding:
@@ -46,16 +46,16 @@ http_interactions:
       Referrer-Policy:
       - strict-origin-when-cross-origin
       Etag:
-      - W/"d67566950fd90d56ce2e37fe4ddae518"
+      - W/"17487e7e9fbcf0c70fabe5c0009f50d5"
       Cache-Control:
       - max-age=0, private, must-revalidate
       Set-Cookie:
-      - _advocate_defence_payments_session=aE5GUVRNVWRuN2JiQmhWZU1IdzZTckhHTzFGdzJYZklMajVBTFZGZmk5bmtPd3hld3RRV055REdLQTdXNVZzb1Jta2dURmM4eDVPL3h2QURJS3Npb3N4V01Iandxdy83dWxXOXBTZmYwTGx0bFVXMUZmSGFULytSa3doMEFnNElEdVhlU2xESE5pUWp0c25nSjZYR2RnPT0tLTZEKzArZGxEbTYxNUVDZkpvS25Yanc9PQ%3D%3D--6b1956d5803d313b3f3fd3fc40e87d433d3cdc78;
+      - _advocate_defence_payments_session=UmFQQmxHM0pmU2xYeHc3ODFZWHp6LzZmLzVyeXk2aytjVmRnM3NJTlVtS0JqK2lDRzdmV0ZjMEhDaXFNbjk2RnVYRlZ0Z2FwbURHaU82bm1kcGU5cThOL2RsbzV3RUQvbGIrNW5aZVZ2Vm5kL2RYTng0T1c4TnFxUThzZHl4LzRjV2ppS1JWS0RVOWdBMERPZi8wa3h3PT0tLWZpM2hjamoxdTJoWDZoYVlqQjdQMHc9PQ%3D%3D--ca25faaeb5cb301df763f96c2adc835306421f38;
         path=/; HttpOnly
       X-Request-Id:
-      - '08236565df8eb080146fe42378cc913b'
+      - 5b69e63101a3377fb498fa1c5e8356da
       X-Runtime:
-      - '0.008111'
+      - '0.008748'
     body:
       encoding: UTF-8
       string: "\n<!DOCTYPE html>\n<!--[if lt IE 9]><html class=\"lte-ie8\" lang=\"en\"><![endif]-->\n<!--[if
@@ -109,7 +109,7 @@ http_interactions:
         class='visuallyhidden'>\nHome link\n</span>\nClaim for crown court defence\n</a>\n</nav>\n</div>\n</div>\n\n
         \     </div>\n    </header>\n\n    \n\n    <div id=\"global-header-bar\"></div>\n\n
         \   <meta name=\"csrf-param\" content=\"authenticity_token\" />\n<meta name=\"csrf-token\"
-        content=\"s9viWHGZh6zF4gFtUS7VBoiWJkEkJYtVqKiieQdLZjLGx+l87H37h2YmC6dYy416Q+W+1nYJDc/eKHXVjwGOtg==\"
+        content=\"s4cAnGALr6hIJRMQE2kt/A5ttumeLT1NsKoFb07NTPoKZI69MbIWGBImBHjaVLua4/z8c3sOFi/6sYBTnBPxiw==\"
         />\n<div class='site-wrapper'>\n<div class='phase-banner'>\n<p>\nThis is a
         new service – your <a href=\"/feedback/new\"><span class=\"visuallyhidden\">Give
         your </span>feedback</a> will help us to improve it. You can <a href=\"/feedback/new?type=bug_report\">report
@@ -117,7 +117,7 @@ http_interactions:
         id='page-h1'>\nSign in\n</h1>\n\n<form class=\"simple_form new_user\" id=\"new_user\"
         autocomplete=\"off\" novalidate=\"novalidate\" action=\"/users/sign_in\" accept-charset=\"UTF-8\"
         method=\"post\"><input name=\"utf8\" type=\"hidden\" value=\"&#x2713;\" /><input
-        type=\"hidden\" name=\"authenticity_token\" value=\"AoSBvhn++vFVmOmCvf6B7/mQdgxyP8uggKSrnM8qWax3mIqahBqG2vZc40i0G9mTMuPumyATTTr2JHwwR2CxKA==\"
+        type=\"hidden\" name=\"authenticity_token\" value=\"155akLAPb4fHHOLjojaHmrPRI7JqMGQ1iK5N41DJDe1ufdSx4bbWN50f9YtrCxH8XkBpKI8TT1fCtcjfghewnA==\"
         /><div class='form-group'>\n<label class=\"email optional form-label-bold\"
         for=\"user_email\">Email</label>\n<input autofocus=\"autofocus\" class=\"string
         email optional form-control\" type=\"email\" value=\"\" name=\"user[email]\"
@@ -151,5 +151,5 @@ http_interactions:
         document.body.className = document.body.className.replace('js-enabled', '');</script>\n
         \ </body>\n</html>\n\n"
     http_version: 
-  recorded_at: Tue, 26 Nov 2019 14:49:14 GMT
+  recorded_at: Tue, 26 Nov 2019 15:07:49 GMT
 recorded_with: VCR 5.0.0

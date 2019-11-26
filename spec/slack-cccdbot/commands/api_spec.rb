@@ -1,13 +1,22 @@
 require 'spec_helper'
 
 describe SlackCccdbot::Commands::Api, :vcr do
-  def app
-    SlackCccdbot::Bot.instance
+
+  let(:message) { "#{SlackRubyBot.config.user} api #{env}" }
+  
+  context 'when user requests a single environment' do
+    let(:env) { 'dev' }
+
+    it 'returns the expected message' do
+      expect(message: message, channel: 'channel').to respond_with_slack_message("Here's an API link for `dev`: https://dev.claim-crown-court-defence.service.justice.gov.uk/api/documentation")
+    end
   end
 
-  subject { app }
+  %w[production prod live].each do |env_name|
+    context "live synonym (#{env_name}) returns the standard end point" do
+      let(:env) { env_name }
 
-  it 'returns the expected message' do
-    expect(message: "#{SlackRubyBot.config.user} api dev", channel: 'channel').to respond_with_slack_message("Here's an API link for `dev`: https://dev.claim-crown-court-defence.service.justice.gov.uk/api/documentation")
+      it { expect(message: message, channel: 'channel').to respond_with_slack_message("Here's an API link for `production`: https://claim-crown-court-defence.service.gov.uk/api/documentation") }
+    end
   end
 end

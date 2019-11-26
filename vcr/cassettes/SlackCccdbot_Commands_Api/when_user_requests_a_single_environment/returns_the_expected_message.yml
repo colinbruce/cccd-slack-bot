@@ -1,0 +1,160 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://dev.claim-crown-court-defence.service.justice.gov.uk/api/documentation
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - dev.claim-crown-court-defence.service.justice.gov.uk
+      User-Agent:
+      - http.rb/4.2.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - openresty/1.15.8.2
+      Date:
+      - Tue, 26 Nov 2019 15:08:30 GMT
+      Content-Type:
+      - text/html; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Vary:
+      - Accept-Encoding
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - max-age=15724800; includeSubDomains
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Etag:
+      - W/"c47dabd34e21f3f46490fe24fa37fcc4"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - _advocate_defence_payments_session=TVJ5MkdxTHMvNVRtb1VyZUtZSlBwcS9jMzZld0pheEs5bWpjaTZEL0p2MVdxc3BRVGsvbVRDcEp6V3pLR0hNbWU2Q21waFU4UG5uQVRkREVpeTEvWW96RU0wbTRYQkpuekhYMkNkKzI4c1oxOG9tZW5RVHJKUG8wcVdPa2VQUExWbEliNmNWckdFakdtSG1rbW1oNjFRPT0tLUk4SnFKdWR2M0lKdHZYWlExSGozbnc9PQ%3D%3D--1b3e2b1d6b43bca32957554e8f3cc9acda2cbdcf;
+        path=/; HttpOnly
+      X-Request-Id:
+      - 801d5a52a2dcca28cc5ea877c606f6e5
+      X-Runtime:
+      - '0.003721'
+    body:
+      encoding: UTF-8
+      string: "<!DOCTYPE html>\n<!--[if lt IE 9]><html class=\"lte-ie8\" lang=\"en\"
+        \ data-swagger-options=\"{&quot;url&quot;:&quot;/api/v1/swagger_doc&quot;,&quot;app_name&quot;:&quot;Claim
+        for crown court defence API&quot;,&quot;app_url&quot;:&quot;https://dev.claim-crown-court-defence.service.justice.gov.uk&quot;,&quot;headers&quot;:{},&quot;api_auth&quot;:&quot;&quot;,&quot;api_key_name&quot;:&quot;api_key&quot;,&quot;api_key_type&quot;:&quot;query&quot;,&quot;api_key_default_value&quot;:&quot;&quot;,&quot;doc_expansion&quot;:&quot;list&quot;,&quot;supported_submit_methods&quot;:[&quot;get&quot;,&quot;post&quot;,&quot;put&quot;,&quot;delete&quot;,&quot;patch&quot;],&quot;before_action_proc&quot;:{},&quot;hide_url_input&quot;:false,&quot;hide_api_key_input&quot;:false}\"><![endif]-->\n<!--[if
+        gt IE 8]><!--><html lang=\"en\"  data-swagger-options=\"{&quot;url&quot;:&quot;/api/v1/swagger_doc&quot;,&quot;app_name&quot;:&quot;Claim
+        for crown court defence API&quot;,&quot;app_url&quot;:&quot;https://dev.claim-crown-court-defence.service.justice.gov.uk&quot;,&quot;headers&quot;:{},&quot;api_auth&quot;:&quot;&quot;,&quot;api_key_name&quot;:&quot;api_key&quot;,&quot;api_key_type&quot;:&quot;query&quot;,&quot;api_key_default_value&quot;:&quot;&quot;,&quot;doc_expansion&quot;:&quot;list&quot;,&quot;supported_submit_methods&quot;:[&quot;get&quot;,&quot;post&quot;,&quot;put&quot;,&quot;delete&quot;,&quot;patch&quot;],&quot;before_action_proc&quot;:{},&quot;hide_url_input&quot;:false,&quot;hide_api_key_input&quot;:false}\"><!--<![endif]-->\n<html
+        data-swagger-options=\"{&quot;url&quot;:&quot;/api/v1/swagger_doc&quot;,&quot;app_name&quot;:&quot;Claim
+        for crown court defence API&quot;,&quot;app_url&quot;:&quot;https://dev.claim-crown-court-defence.service.justice.gov.uk&quot;,&quot;headers&quot;:{},&quot;api_auth&quot;:&quot;&quot;,&quot;api_key_name&quot;:&quot;api_key&quot;,&quot;api_key_type&quot;:&quot;query&quot;,&quot;api_key_default_value&quot;:&quot;&quot;,&quot;doc_expansion&quot;:&quot;list&quot;,&quot;supported_submit_methods&quot;:[&quot;get&quot;,&quot;post&quot;,&quot;put&quot;,&quot;delete&quot;,&quot;patch&quot;],&quot;before_action_proc&quot;:{},&quot;hide_url_input&quot;:false,&quot;hide_api_key_input&quot;:false}\">\n<head>\n
+        \ <title>Claim for crown court defence API</title>\n  <meta name=\"viewport\"
+        content=\"width=device-width, initial-scale=1.0\">\n  <link href='//fonts.googleapis.com/css?family=Droid+Sans:400,700'
+        rel='stylesheet' type='text/css'/>\n  <link rel=\"stylesheet\" media=\"screen\"
+        href=\"/assets/grape_swagger_rails/application-c8501836f90d2cd43e789219a42fd4cce75fcc83abfef6275038698b529c16df.css\"
+        />\n  <script src=\"/assets/grape_swagger_rails/application-ad46be4dfa2feb139ed09da96e13c705b23c3b8a1dfa5dde150767d754265b95.js\"></script>\n\n
+        \ <script type=\"text/javascript\">\n    (function(){if(navigator.userAgent.match(/IEMobile\\/10\\.0/)){var
+        d=document,c=\"appendChild\",a=d.createElement(\"style\");a[c](d.createTextNode(\"@-ms-viewport{width:auto!important}\"));d.getElementsByTagName(\"head\")[0][c](a);}})();\n
+        \ </script>\n\n  <title>Your account - Claim for crown court defence - Gov.uk</title>\n\n
+        \ <!--[if gte IE 9]><!-->\n  <link rel=\"stylesheet\" media=\"all\" href=\"/assets/fonts-a5aa57b6ceaab0b585d834d1d78e46d8b76dd3f80502da205736cdd3060b9b86.css\"
+        />\n  <!--<![endif]-->\n  <!--[if gt IE 8]><!--><link rel=\"stylesheet\" media=\"screen\"
+        href=\"/assets/govuk-template-719fc5f61da92b4ba0d1b72b0206272471c4e1da4df93f67daa4f45b35f139ca.css\"
+        /><!--<![endif]-->\n  <!--[if IE 6]><link rel=\"stylesheet\" media=\"screen\"
+        href=\"/assets/govuk-template-ie6-b31b2112159f2b67701fb958647872e2ecb5079ea7dd0ee0bc39728097132803.css\"
+        /><![endif]-->\n  <!--[if IE 7]><link rel=\"stylesheet\" media=\"screen\"
+        href=\"/assets/govuk-template-ie7-d1df5b238e509ff74ea07508754eccc13e3e314120b0a0a24b20e7d3800efe55.css\"
+        /><![endif]-->\n  <!--[if IE 8]><link rel=\"stylesheet\" media=\"screen\"
+        href=\"/assets/govuk-template-ie8-74cc43d15dcaabd4cdce15a773e8764d4ae52fdbaae325f456d3754ca575c5e5.css\"
+        /><![endif]-->\n\n  <link rel=\"stylesheet\" media=\"print\" href=\"/assets/govuk-template-print-1076519521c2fffbbf75ab3b0d3b32ee2d96ac7e9778f1cdfac1771eefd1a1c0.css\"
+        />\n\n  <!--[if lt IE 9]>\n  <script src=\"/assets/ie-a4524544a53d57a7e259b4bb966b9c32557c98c920b77e52d09304642b68401a.js\"></script>\n
+        \ <![endif]-->\n\n  <link rel=\"shortcut icon\" href=\"/assets/favicon.ico\"
+        type=\"image/x-icon\" />\n  <link rel=\"mask-icon\" href=\"/assets/gov.uk_logotype_crown.svg\"
+        color=\"#0b0c0c\">\n\n  <!-- Size for iPad and iPad mini (high resolution)
+        -->\n  <link rel=\"apple-touch-icon-precomposed\" sizes=\"152x152\" href=\"/assets/apple-touch-icon-152x152.png\">\n
+        \ <!-- Size for iPhone and iPod touch (high resolution) -->\n  <link rel=\"apple-touch-icon-precomposed\"
+        sizes=\"120x120\" href=\"/assets/apple-touch-icon-120x120.png\">\n  <!-- Size
+        for iPad 2 and iPad mini (standard resolution) -->\n  <link rel=\"apple-touch-icon-precomposed\"
+        sizes=\"76x76\" href=\"/assets/apple-touch-icon-76x76.png\">\n  <!-- Default
+        non-defined size, also used for Android 2.1+ devices -->\n  <link rel=\"apple-touch-icon-precomposed\"
+        href=\"/assets/apple-touch-icon-60x60.png\">\n\n  <meta name=\"viewport\"
+        content=\"width=device-width, initial-scale=1\">\n  <meta property=\"og:image\"
+        content=\"/assets/opengraph-image.png\">\n\n  <meta content='telephone=no'
+        name='format-detection'>\n\n  <link rel=\"stylesheet\" media=\"all\" href=\"/stylesheets/v1/application.css\"
+        />\n\n  <script type=\"text/javascript\">\n    $(function () {\n      var
+        options = $(\"html\").data('swagger-options');\n      var headers = {};\n
+        \     window.swaggerUi = new SwaggerUi({\n        url: options.app_url + options.url,\n
+        \       dom_id: \"swagger-ui-container\",\n        supportHeaderParams: true,\n
+        \       supportedSubmitMethods: options.supported_submit_methods || [],\n
+        \       authorizations: headers,\n        onComplete: function(swaggerApi,
+        swaggerUi){\n          if('console' in window) {\n            console.log(\"Loaded
+        SwaggerUI\")\n            console.log(swaggerApi);\n            console.log(swaggerUi);\n
+        \         }\n          $('pre code').each(function(i, e) {hljs.highlightBlock(e)});\n
+        \       },\n        onFailure: function(data) {\n          if('console' in
+        window) {\n            console.log(\"Unable to Load SwaggerUI\");\n            console.log(data);\n
+        \         }\n        },\n        docExpansion: options.doc_expansion,\n        validatorUrl:
+        options.validator_url,\n        apisSorter: \"alpha\"\n      });\n\n      window.swaggerUi.load();\n
+        \   });\n  </script>\n</head>\n\n<body class=\"swagger-section\">\n\n  <div
+        id=\"skiplink-container\">\n    <div>\n      <a href=\"#content\" class=\"skiplink\">Skip
+        to main content</a>\n    </div>\n  </div>\n\n    <header role=\"banner\" id=\"global-header\"
+        class=\"with-proposition\">\n      <div class=\"header-wrapper\">\n        <div
+        class=\"header-global\">\n          <div class=\"header-logo\">\n            <a
+        href=\"https://www.gov.uk/\" title=\"Go to the GOV.UK homepage\" id=\"logo\"
+        class=\"content\">\n              <img src=\"/assets/gov.uk_logotype_crown_invert_trans.png\"
+        width=\"35\" height=\"31\" alt=\"\"> GOV.UK\n            </a>\n          </div>\n\n
+        \       </div>\n        <div class=\"header-proposition\">\n          <div
+        class=\"content\">\n          <a class=\"js-header-toggle menu\" href=\"#proposition-links\">\n
+        \             Menu\n            </a>\n            <nav id=\"proposition-menu\">\n
+        \             <a href=\"/\" id=\"proposition-name\">\n              <span
+        class=\"visuallyhidden\">\n                Home link\n              </span>\n
+        \               Claim for crown court defence\n              </a>\n              <div
+        id=\"proposition-links\">\n              </div>\n            </nav>\n          </div>\n
+        \       </div>\n      </div>\n    </header>\n  <!--end header-->\n\n\n  \n\n
+        \ <div id=\"global-header-bar\">\n    <div class=\"\">\n      <div class=\"header-bar\"></div>\n
+        \   </div>\n  </div>\n  <!--end global-header-bar-->\n\n  <meta name=\"csrf-param\"
+        content=\"authenticity_token\" />\n<meta name=\"csrf-token\" content=\"TgrIhqeoxqVUU/KjKWOx3ZD356+tD2hpkGIfowKsdIfATz3R5qp2nPisRPkf/F5idfy5KqrKiNE7E8g0svzb9Q==\"
+        />\n\n  <div id=\"page\">\n    <div id=\"content\">\n      <main class=\"main-content\">\n
+        \       <div id=\"message-bar\" class=\"swagger-ui-wrap\">\n          &nbsp;\n
+        \       </div>\n\n        <div id=\"swagger-ui-container\" class=\"swagger-ui-wrap\">\n
+        \       </div>\n      </main>\n    </div>\n    <!-- end content -->\n\n    <div
+        id=\"global-app-error\" class=\"app-error hidden\"></div>\n\n    \n\n  </div>\n\n
+        \ <footer class=\"group js-footer\" id=\"footer\" role=\"contentinfo\">\n\n
+        \   <div class=\"footer-wrapper\">\n      <div class=\"footer-meta\">\n        <div
+        class=\"footer-meta-inner\">\n          <ul>\n            <li>\n              <a
+        href=\"http://www.gov.uk/help/cookies\">Cookies</a>\n            </li>\n            <li>\n
+        \             <a href=\"/contact_us\">Contact</a>\n            </li>\n            <li>\n
+        \             <a href=\"/tandcs\">Terms and Conditions</a>\n            </li>\n
+        \           <li>\n              <a target=\"_blank\" href=\"/feedback/new\">Feedback</a>\n
+        \           </li>\n            <li>\n              <span>Built by</span>\n
+        \             <a href=\"https://mojdigital.blog.gov.uk/\">\n                <abbr
+        title=\"Ministry of Justice\">MOJ Digital Services</abbr>\n              </a>\n
+        \           </li>\n          </ul>\n\n          <div class=\"open-government-licence\">\n
+        \           <p class=\"logo\"><a href=\"https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/\"
+        rel=\"license\">Open Government Licence</a></p>\n            <p>All content
+        is available under the <a href=\"https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/\"
+        rel=\"license\">Open Government Licence v3.0</a>, except where otherwise stated</p>\n
+        \         </div>\n        </div>\n\n        <div class=\"copyright\">\n          <a
+        href=\"http://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/copyright-and-re-use/crown-copyright/\">©
+        Crown copyright</a>\n        </div>\n      </div>\n    </div>\n  </footer>\n
+        \ <!--end footer-->\n\n  <!-- do NOT include ADPs application,js as it including
+        jquery twice causes a jquery error in swagger, the impact of which is unclear,
+        but we do not need this js anyway execpt jquery_ujs -->\n  <script src=\"/assets/adp_swagger_application-3689f06c1ab53506f9a18f52155c31206effa087fd1e4d20f62acaef86485b9e.js\"></script>\n\n</body>\n\n</html>\n"
+    http_version: 
+  recorded_at: Tue, 26 Nov 2019 15:08:30 GMT
+recorded_with: VCR 5.0.0

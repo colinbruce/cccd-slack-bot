@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://dev.claim-crown-court-defence.service.justice.gov.uk/api/documentation
+    uri: https://claim-crown-court-defence.service.gov.uk/api/documentation
     body:
       encoding: UTF-8
       string: ''
@@ -10,7 +10,7 @@ http_interactions:
       Connection:
       - close
       Host:
-      - dev.claim-crown-court-defence.service.justice.gov.uk
+      - claim-crown-court-defence.service.gov.uk
       User-Agent:
       - http.rb/4.2.0
   response:
@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - openresty/1.15.8.2
       Date:
-      - Tue, 19 Nov 2019 18:53:15 GMT
+      - Tue, 26 Nov 2019 15:09:53 GMT
       Content-Type:
       - text/html; charset=utf-8
       Transfer-Encoding:
@@ -46,25 +46,25 @@ http_interactions:
       Referrer-Policy:
       - strict-origin-when-cross-origin
       Etag:
-      - W/"a77d3f3ce0d9229e4f3b14551d849785"
+      - W/"fdeac3eac047b217950b9f7d4a09b0a6"
       Cache-Control:
       - max-age=0, private, must-revalidate
       Set-Cookie:
-      - _advocate_defence_payments_session=Z0Zjbm5SaE50d3hJQkpkMCtCSzVmcE1JMVQ1L1dGVldYRk92endJek9ORmREdDgrUWt1ZUFvODVCZEU0aENFU0MrWjBaRHo4NWh3c0oyTTJoUDdCSDN1NmJzQjBHeTJQYlZobXpBcmVwQit1Sm5XdzhlZTdQbVJWNFlhMjM4OHRGd0ZaQ1pGQyszSXZYL3ozM1dpbU9nPT0tLUR1N2lHbDE2Z2NYREptelBCVVNIN3c9PQ%3D%3D--a0f277e53b8d64f12e315562fa4a796c9ec0e215;
+      - _advocate_defence_payments_session=Vzhtc3c3eGUvRTBReXJ3Y29vR0hoZU1EVFBYWlplVXNZckdIVC9kckxZYng0L25GbE1KVmtsSjlXQ1Q4L2xPZTB5WTVadmZFMHVseHh2RG5CR0pSaWdpRkdWbHdYYXhoMFJJYllhZk9sWmQzd29mVnluRDduODY2UmJqVEU5NHd6dEp0S1lEMzE3ZjhtcGg1OVRMaS9nPT0tLXlSdkg3dVowL3RRbDJDYTAwTTBsb1E9PQ%3D%3D--2a3c6124ba3e25cf3d755a83b8f19e3c5c0a9485;
         path=/; HttpOnly
       X-Request-Id:
-      - 83f6a03a560ca3b2b97a2c900b9d6db9
+      - b088d9a90195c503cdf8cb73e0fc211b
       X-Runtime:
-      - '0.005550'
+      - '0.009320'
     body:
       encoding: UTF-8
       string: "<!DOCTYPE html>\n<!--[if lt IE 9]><html class=\"lte-ie8\" lang=\"en\"
         \ data-swagger-options=\"{&quot;url&quot;:&quot;/api/v1/swagger_doc&quot;,&quot;app_name&quot;:&quot;Claim
-        for crown court defence API&quot;,&quot;app_url&quot;:&quot;https://dev.claim-crown-court-defence.service.justice.gov.uk&quot;,&quot;headers&quot;:{},&quot;api_auth&quot;:&quot;&quot;,&quot;api_key_name&quot;:&quot;api_key&quot;,&quot;api_key_type&quot;:&quot;query&quot;,&quot;api_key_default_value&quot;:&quot;&quot;,&quot;doc_expansion&quot;:&quot;list&quot;,&quot;supported_submit_methods&quot;:[&quot;get&quot;,&quot;post&quot;,&quot;put&quot;,&quot;delete&quot;,&quot;patch&quot;],&quot;before_action_proc&quot;:{},&quot;hide_url_input&quot;:false,&quot;hide_api_key_input&quot;:false}\"><![endif]-->\n<!--[if
+        for crown court defence API&quot;,&quot;app_url&quot;:&quot;https://claim-crown-court-defence.service.gov.uk&quot;,&quot;headers&quot;:{},&quot;api_auth&quot;:&quot;&quot;,&quot;api_key_name&quot;:&quot;api_key&quot;,&quot;api_key_type&quot;:&quot;query&quot;,&quot;api_key_default_value&quot;:&quot;&quot;,&quot;doc_expansion&quot;:&quot;list&quot;,&quot;supported_submit_methods&quot;:[&quot;get&quot;,&quot;post&quot;,&quot;put&quot;,&quot;delete&quot;,&quot;patch&quot;],&quot;before_action_proc&quot;:{},&quot;hide_url_input&quot;:false,&quot;hide_api_key_input&quot;:false}\"><![endif]-->\n<!--[if
         gt IE 8]><!--><html lang=\"en\"  data-swagger-options=\"{&quot;url&quot;:&quot;/api/v1/swagger_doc&quot;,&quot;app_name&quot;:&quot;Claim
-        for crown court defence API&quot;,&quot;app_url&quot;:&quot;https://dev.claim-crown-court-defence.service.justice.gov.uk&quot;,&quot;headers&quot;:{},&quot;api_auth&quot;:&quot;&quot;,&quot;api_key_name&quot;:&quot;api_key&quot;,&quot;api_key_type&quot;:&quot;query&quot;,&quot;api_key_default_value&quot;:&quot;&quot;,&quot;doc_expansion&quot;:&quot;list&quot;,&quot;supported_submit_methods&quot;:[&quot;get&quot;,&quot;post&quot;,&quot;put&quot;,&quot;delete&quot;,&quot;patch&quot;],&quot;before_action_proc&quot;:{},&quot;hide_url_input&quot;:false,&quot;hide_api_key_input&quot;:false}\"><!--<![endif]-->\n<html
+        for crown court defence API&quot;,&quot;app_url&quot;:&quot;https://claim-crown-court-defence.service.gov.uk&quot;,&quot;headers&quot;:{},&quot;api_auth&quot;:&quot;&quot;,&quot;api_key_name&quot;:&quot;api_key&quot;,&quot;api_key_type&quot;:&quot;query&quot;,&quot;api_key_default_value&quot;:&quot;&quot;,&quot;doc_expansion&quot;:&quot;list&quot;,&quot;supported_submit_methods&quot;:[&quot;get&quot;,&quot;post&quot;,&quot;put&quot;,&quot;delete&quot;,&quot;patch&quot;],&quot;before_action_proc&quot;:{},&quot;hide_url_input&quot;:false,&quot;hide_api_key_input&quot;:false}\"><!--<![endif]-->\n<html
         data-swagger-options=\"{&quot;url&quot;:&quot;/api/v1/swagger_doc&quot;,&quot;app_name&quot;:&quot;Claim
-        for crown court defence API&quot;,&quot;app_url&quot;:&quot;https://dev.claim-crown-court-defence.service.justice.gov.uk&quot;,&quot;headers&quot;:{},&quot;api_auth&quot;:&quot;&quot;,&quot;api_key_name&quot;:&quot;api_key&quot;,&quot;api_key_type&quot;:&quot;query&quot;,&quot;api_key_default_value&quot;:&quot;&quot;,&quot;doc_expansion&quot;:&quot;list&quot;,&quot;supported_submit_methods&quot;:[&quot;get&quot;,&quot;post&quot;,&quot;put&quot;,&quot;delete&quot;,&quot;patch&quot;],&quot;before_action_proc&quot;:{},&quot;hide_url_input&quot;:false,&quot;hide_api_key_input&quot;:false}\">\n<head>\n
+        for crown court defence API&quot;,&quot;app_url&quot;:&quot;https://claim-crown-court-defence.service.gov.uk&quot;,&quot;headers&quot;:{},&quot;api_auth&quot;:&quot;&quot;,&quot;api_key_name&quot;:&quot;api_key&quot;,&quot;api_key_type&quot;:&quot;query&quot;,&quot;api_key_default_value&quot;:&quot;&quot;,&quot;doc_expansion&quot;:&quot;list&quot;,&quot;supported_submit_methods&quot;:[&quot;get&quot;,&quot;post&quot;,&quot;put&quot;,&quot;delete&quot;,&quot;patch&quot;],&quot;before_action_proc&quot;:{},&quot;hide_url_input&quot;:false,&quot;hide_api_key_input&quot;:false}\">\n<head>\n
         \ <title>Claim for crown court defence API</title>\n  <meta name=\"viewport\"
         content=\"width=device-width, initial-scale=1.0\">\n  <link href='//fonts.googleapis.com/css?family=Droid+Sans:400,700'
         rel='stylesheet' type='text/css'/>\n  <link rel=\"stylesheet\" media=\"screen\"
@@ -128,7 +128,7 @@ http_interactions:
         \       </div>\n      </div>\n    </header>\n  <!--end header-->\n\n\n  \n\n
         \ <div id=\"global-header-bar\">\n    <div class=\"\">\n      <div class=\"header-bar\"></div>\n
         \   </div>\n  </div>\n  <!--end global-header-bar-->\n\n  <meta name=\"csrf-param\"
-        content=\"authenticity_token\" />\n<meta name=\"csrf-token\" content=\"soAhyuMB0Ssb56kZ+CJG35yf1Xbz58dDWVvb9ZtTsBgOaKmGT8OldGlXPxc7XWUAuSFJKUYmnxIMNgOKbTD+Hg==\"
+        content=\"authenticity_token\" />\n<meta name=\"csrf-token\" content=\"HrFNK8BPstEAfl4kKXrk2GG06Oob6wD7gblRJa9Htrvwvy3ZhL4+2H4e2JmCT8CXrDRt5meZJ26f2IJ97PJjVg==\"
         />\n\n  <div id=\"page\">\n    <div id=\"content\">\n      <main class=\"main-content\">\n
         \       <div id=\"message-bar\" class=\"swagger-ui-wrap\">\n          &nbsp;\n
         \       </div>\n\n        <div id=\"swagger-ui-container\" class=\"swagger-ui-wrap\">\n
@@ -156,5 +156,5 @@ http_interactions:
         jquery twice causes a jquery error in swagger, the impact of which is unclear,
         but we do not need this js anyway execpt jquery_ujs -->\n  <script src=\"/assets/adp_swagger_application-3689f06c1ab53506f9a18f52155c31206effa087fd1e4d20f62acaef86485b9e.js\"></script>\n\n</body>\n\n</html>\n"
     http_version: 
-  recorded_at: Tue, 19 Nov 2019 18:53:15 GMT
+  recorded_at: Tue, 26 Nov 2019 15:09:53 GMT
 recorded_with: VCR 5.0.0
